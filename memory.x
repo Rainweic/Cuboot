@@ -1,0 +1,9 @@
+MEMORY
+{
+  /* STM32F103RCT6 有 256K Flash 和 48K RAM */
+  FLASH : ORIGIN = 0x08000000, LENGTH = 256K
+  RAM : ORIGIN = 0x20000000, LENGTH = 48K
+}
+
+/* 这是可选的，用于设置栈大小 */
+_stack_start = ORIGIN(RAM) + LENGTH(RAM); 
