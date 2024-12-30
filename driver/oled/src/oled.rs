@@ -14,10 +14,10 @@ pub enum OLEDError {
 
 #[allow(unused)]
 pub struct OLED {
-    sclk: Output<'static, PC14>,
-    sdin: Output<'static, PB5>,
-    rst: Output<'static, PB4>,
-    rs: Output<'static, PB3>,
+    sclk: Output<'static>,
+    sdin: Output<'static>,
+    rst: Output<'static>,
+    rs: Output<'static>,
     gram: [[u8; 8]; 128],
 }
 

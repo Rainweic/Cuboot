@@ -76,7 +76,7 @@ impl Default for LidarConfig {
             is_ready_frame: false, 
             use_noise_filter: false, 
             timestamp: 0, 
-            speed: 0, 
+            speed: 0., 
             is_normal_poweron_comm: false, 
             data_pkg_count_of_poweron: 0, 
             timestamp_last_data_pkg: 0, 
